@@ -1,111 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/slippry.css">
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/color/default.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./kaka.ico"/>
-    <link rel="stylesheet" type="text/html" href="index.html">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="update.css">
-    <title>Demo</title>
-</head>
-
-<body>
-<header>
-
-<div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
-  <div class="container">
-
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Monitum</a>
-    </div>
-
-    <div class="navigation">
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="current"><a href="index.html#intro">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#works">Demo</a></li>
-        <li><a href="index.html#download">Download</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul></nav>
-    </div><!-- /.navbar-collapse -->
-    </div>
-
-  </div>
-</div>
-
-
-</header>
-
-
-<section id="about" class="section">
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div id="front-page" class="">
-                
-                <h1 id="title">Upload your video here</h1>
-                <div class="upload-btn-wrapper" >
-                    <button type="button" class="btn btn-success">
-                        <input type="file" id="file-to-upload" accept="video/mp4" />
-                    </button>
-                </div>
-                <div id="video-demo-container" class="">
-                    <video id="main-video" controls>
-                        <source type="video/mp4">
-                    </video>
-                </div>
-                <canvas id="video-canvas" class=""></canvas>
-
-                <div id="image-show"></div>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="assets/css/bootstrap.css" rel="stylesheet" />
+      <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
+      <link rel="stylesheet" href="assets/css/slippry.css">
+      <link href="assets/css/style.css" rel="stylesheet" />
+      <link rel="stylesheet" href="assets/color/default.css">
+      <link rel="shortcut icon" type="image/x-icon" href="./kaka.ico"/>
+      <link rel="stylesheet" type="text/html" href="index.html">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="update.css">
+      <title>Demo</title>
+   </head>
+   <body>
+      <header>
+         <div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
+            <div class="container">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Monitum</a>
+               </div>
+               <div class="navigation">
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <nav>
+                        <ul class="nav navbar-nav navbar-right">
+                           <li class="current"><a href="index.html#intro">Home</a></li>
+                           <li><a href="index.html#about">About</a></li>
+                           <li><a href="index.html#works">Demo</a></li>
+                           <li><a href="index.html#download">Download</a></li>
+                           <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <!-- /.navbar-collapse -->
+               </div>
             </div>
+         </div>
+      </header>
+      <section id="about" class="section">
+         <centre>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                     <div id="front-page" class="">
+                        <h1 id="title">Upload your video here</h1>
+                        <div class="upload-btn-wrapper" >
+                           <button type="button" class="btn btn-success">
+                           <input type="file" id="file-to-upload" accept="video/mp4" />
+                           </button>
+                        </div>
+                        <div id="theDiv" style="display: flex; justify-content: center; text-align: center;"></div>
+                        <div id="video-demo-container" class="">
+                           <video id="main-video" controls>
+                              <source type="video/mp4">
+                           </video>
+                        </div>
+                        <canvas id="video-canvas" class=""></canvas>
+                        <div id="image-show"></div>
+                     </div>
+                  </div>
+               </div>
+         </centre>
+         </div>
+      </section>
 
-        </div>
-    </div>
-    
-</div>
-</section>
 
-
-
-<script>
-    var _CANVAS = document.querySelector("#video-canvas"),
-        _CTX = _CANVAS.getContext("2d"),
-        _VIDEO = document.querySelector("#main-video");
-    // When user chooses a MP4 file
-    document.querySelector("#file-to-upload").addEventListener('change', function () {
-    
-        // Object Url as the video source
-        document.querySelector("#main-video source").setAttribute('src', URL.createObjectURL(document.querySelector("#file-to-upload").files[0]));
-        // Load the video and show it
-        _VIDEO.load();
-        // Load metadata of the video to get video duration and dimensions
-        _VIDEO.addEventListener('loadedmetadata', function () {
-            console.log(_VIDEO.duration);
-            _CANVAS.width = _VIDEO.videoWidth;
-            _CANVAS.height = _VIDEO.videoHeight;
+      <script src="assets/js/jquery-3.3.1.js"></script>
+      <script>
+         var _CANVAS = document.querySelector("#video-canvas"),
+             _CTX = _CANVAS.getContext("2d"),
+             _VIDEO = document.querySelector("#main-video");
+            // When user chooses a MP4 file
+            document.querySelector("#file-to-upload").addEventListener('change', function () {
+                runVideo()
+            $('#theDiv').prepend('<img src="graphic.png"/>');
+            $('#main-video').hide();
+         });
+         $(document).on("click", "img", function(e) {
+            $('#theDiv').hide();
+            $('#main-video').show();
         });
-    });
-    
-    function take_me() {
-        _CTX.drawImage(_VIDEO, 0, 0);
-        var sourceImageUrl = _CANVAS.toDataURL();
-        $('#image-show').append('<img id="theImg" src= sourceImageUrl />')
-    }
-    
-</script>
-</body>
+         function runVideo() {
+             // Object Url as the video source
+             document.querySelector("#main-video source").setAttribute('src', URL.createObjectURL(document.querySelector("#file-to-upload").files[0]));
+             // Load the video and show it
+             _VIDEO.load();
+             // Load metadata of the video to get video duration and dimensions
+             _VIDEO.addEventListener('loadedmetadata', function () {
+                 console.log(_VIDEO.duration);
+                 _CANVAS.width = _VIDEO.videoWidth;
+                 _CANVAS.height = _VIDEO.videoHeight;
+             });
+         }
+      </script>
+   </body>
 </html>
