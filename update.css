@@ -1,0 +1,38 @@
+
+body {
+	margin-top: 0%;
+}
+
+#title {
+	margin-bottom: 10px;
+}
+#front-page {
+	margin-bottom: 1%;
+}
+.upload-btn-wrapper {
+	width: 100%;
+	margin-top: 2%;
+	/*margin-left: 5%; 
+	margin-right: 5%; */
+	height: 50%; 
+	border-style: none
+}
+#video-demo-container {
+	float: left; 
+	/*margin-left: 5vmax; */
+	margin: 3% 0;
+	border: black; 
+	border: none;
+}
+
+#main-video {
+	height: 35vmax; 
+	width: 58vmax; 
+	margin-bottom: 3%;
+}
+#video-canvas {
+	height: 20vmax; 
+	width: 30vmax; 
+	float: top; 
+	border-style: none
+}
