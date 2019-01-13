@@ -824,7 +824,7 @@ ul.the-icons {
 .tab {
 	margin: 2% 0 20% 5%;
     overflow: hidden;
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     background-color: #f1f1f1;
     width: 50%;
 }
