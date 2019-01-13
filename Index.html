@@ -139,7 +139,37 @@
 		</div>
 	</div>
 	<div class="row">
-		
+		<div>
+			<div class="heading-additional">
+				<h3><span style="color: ">More Contents coming soon!</span></h3>
+			</div>
+			<div class="tab">
+ 				<button class="tablinks" onclick="openCity(event, 'ptsd')">PTSD</button>
+  				<button class="tablinks" onclick="openCity(event, 'Anxiety')">Anxiety</button>
+			</div>
+			<div id="ptsd" class="tabcontent">
+  				<h3>PTSD</h3>
+  				<p>An estimated 70 percent of adults in the United States have experienced a traumatic event at least once in their lives and up to 20 percent of these people go on to develop posttraumatic stress disorder, or PTSD.
+				An estimated 5 percent of Americans—more than 13 million people—have PTSD at any given time.
+				Approximately 8 percent of all adults—1 of 13 people in this country—will develop PTSD during their lifetime. 
+				<a href="https://www.sidran.org/resources/for-survivors-and-loved-ones/post-traumatic-stress-disorder-fact-sheet/">Find out More.</a> </p>
+			</div>
+
+			<div id="Anxiety" class="tabcontent">
+  				<h3>Anxiety</h3>
+  				<p>Anxiety disorders are the most common mental illness in the U.S., affecting 40 million adults in the United States age 18 and older, or 18.1% of the population every year.<a href="https://adaa.org/about-adaa/press-room/facts-statistics"> Find out more. (National Institute of Mental Health)</a></p> 
+  				<ul>
+  					<li>Generalized Anxiety Disorders</li>
+  					<li>Panic Disorders</li>
+  					<li>Social Anxiety Disorder</li>
+  					<li>Specific Phobias</li>
+  					<li>Obsessive Compulsive disorder (OCD)</li>
+  					<li>Major Depressive Disorder</li>
+  					<li>Persistant depressive disorder</li>
+  					<li>And different related illness</li>
+  				</ul>
+			</div>
+		</div>
 	</div>
 </div>
 </section>
@@ -155,7 +185,7 @@
 			</div>
 			<div class="sub-heading">
 				<p>
-					 Lorem ipsum dolor sit amet, mutat paulo simul per no, assum fastidii vituperata eam no.
+					 Want to work with us or just want to say hello? Don't hesitate to get in touch!
 				</p>
 			</div>
 		</div>
@@ -165,12 +195,12 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-6">
-			<h4><i class="icon-envelope"></i><strong>Contact form</strong></h4>
+			<!-- <h4><i class="icon-envelope"></i><strong>Contact form</strong></h4>
 			<p>
 				Want to work with us or just want to say hello? Don't hesitate to get in touch!
-			</p>
+			</p> -->
 			<!-- start contact form -->
-						<div class="cform" id="contact-form">
+						<!-- <div class="cform" id="contact-form">
 							<div id="sendmessage">
 								 Your message has been sent. Thank you!
 							</div>
@@ -199,17 +229,9 @@
 							  <button type="submit" class="btn btn-lg btn-theme pull-left">Send Message</button>
 							</form>
 
-						</div>
+						</div> -->
 						<!-- end contact form -->
 						<div class="clear"></div>
-		</div>
-		<div class="col-md-6">
-						<h4>Find our location</h4>
-						<p>View from google map</p>
-						<!-- map -->
-						<div id="section-map" class="clearfix">
-							<div id="map"></div>
-						</div>	
 		</div>
 	</div>
 </div>
@@ -318,6 +340,29 @@
                 // Create the Google Map using out element and options defined above
                 var map = new google.maps.Map(mapElement, mapOptions);
             }
+        </script>
+
+        <script type="text/javascript">
+        	function openCity(evt, cityName) {
+  				// Declare all variables
+  				var i, tabcontent, tablinks;
+
+  				// Get all elements with class="tabcontent" and hide them
+  				tabcontent = document.getElementsByClassName("tabcontent");
+  				for (i = 0; i < tabcontent.length; i++) {
+    				tabcontent[i].style.display = "none";
+  				}
+
+  				// Get all elements with class="tablinks" and remove the class "active"
+  				tablinks = document.getElementsByClassName("tablinks");
+  				for (i = 0; i < tablinks.length; i++) {
+    				tablinks[i].className = tablinks[i].className.replace(" active", "");
+  				}
+
+  				// Show the current tab, and add an "active" class to the button that opened the tab
+  				document.getElementById(cityName).style.display = "block";
+  				evt.currentTarget.className += " active";
+			}
         </script>
 </body>
 </html>
