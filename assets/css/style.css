@@ -824,11 +824,11 @@ ul.the-icons {
 
 /*tab content*/
 .tab {
-	margin: 2% 0% 0 42.5%;
+	margin: 2% 0% 0 44%;
     overflow: hidden;
     /*border: 1px solid #ccc;*/
     background-color: #f1f1f1;
-    width: 13%;
+    width: 11%;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -856,7 +856,7 @@ ul.the-icons {
 
 /* Style the tab content */
 .tabcontent {
-    margin: 5%;
+    margin: 3% 15%;
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
